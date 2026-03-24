@@ -1,0 +1,26 @@
+{
+  "name": "workflow-pipeline-adapter-your-name",
+  "version": "0.1.0",
+  "description": "Your Provider adapter for workflow-pipeline",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "workflow-pipeline-adapter"
+  ],
+  "peerDependencies": {
+    "workflow-pipeline": ">=0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0",
+    "@types/node": "^25.5.0"
+  },
+  "license": "MIT"
+}
