@@ -11,7 +11,7 @@
 export interface AdapterPluginMeta {
   name: string;
   displayName: string;
-  provides: Array<'ticketing' | 'gitHost' | 'ci' | 'dashboard' | 'notifications' | 'calendar'>;
+  provides: Array<'ticketing' | 'gitHost' | 'ci' | 'dashboard' | 'notifications'>;
   configRequirements: string[];
   configPrompts: Array<{
     key: string;
