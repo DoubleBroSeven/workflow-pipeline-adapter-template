@@ -1,6 +1,8 @@
 # workflow-pipeline-adapter-template
 
-Template repo for building [workflow-pipeline](https://github.com/DoubleBroSeven/workflow-pipeline) adapter plugins.
+Template repo for building **community** [workflow-pipeline](https://github.com/DoubleBroSeven/workflow-pipeline) adapter plugins.
+
+Plugins built from this template are third-party/community adapters. Official adapters are maintained by the workflow-pipeline team and listed in the [official registry](https://github.com/DoubleBroSeven/workflow-pipeline/blob/development/src/adapters/official-plugins.ts). Community plugins work the same way — they just aren't shown in the init wizard by default.
 
 ## Getting Started
 
@@ -48,6 +50,15 @@ See the [Plugin Author Guide](https://github.com/DoubleBroSeven/workflow-pipelin
 - Shared helpers (`buildIssueBody`, `parseIssueBody`)
 - Testing patterns and contract tests
 - Discovery and auto-install mechanics
+
+## Official vs Community
+
+Plugins built from this template are **community plugins**. They work identically to official adapters but:
+- They don't appear in the init wizard by default
+- Users install them manually: `npm install -g workflow-pipeline-adapter-your-name`
+- They are maintained by you, not the workflow-pipeline team
+
+If your plugin gains traction and you'd like it reviewed for official status, open an issue on the [core repo](https://github.com/DoubleBroSeven/workflow-pipeline/issues).
 
 ## License
 
